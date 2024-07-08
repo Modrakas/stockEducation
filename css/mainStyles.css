@@ -1,0 +1,54 @@
+@font-face { 
+  font-family: 'le-murmure'; 
+  font-weight: regular; 
+  src: url('le-murmure.woff');
+}
+
+*{
+  font-family: LeMurmure-Regular, sans-serif;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  background-color: rgba(55,57,56,255);;
+}
+
+body {
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('/assests/images/logoL.PNG');
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main__page__container {
+  background-color: transparent;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  padding-top: 21px;
+  padding-left: 9px;
+  top: 50%;
+  width: 100%;
+}
+
+.enter__btn {
+  font-size:50px;
+  color: rgb(17, 225, 17);
+  background-color: transparent;
+  border: none;
+  text-shadow: 2px 2px 1px rgba(55,57,56,255);
+  text-decoration: none;
+  font-size:50px;
+  background-color: transparent;
+  text-shadow: 2px 2px 1px rgba(55,57,56,255);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
