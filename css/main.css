@@ -1,0 +1,26 @@
+@font-face { 
+  font-family: 'sligoil-micro'; 
+  font-weight: regular; 
+  src: url('sligoil-micro.woff');
+}
+
+*{
+  font-family: Sligoil-Micro, sans-serif;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  /* background-color: var(--container-color); */
+}
+
+.d {
+  font-size: 500px;
+  z-index: 1;
+  margin-left: 100px;
+}
+
+.sign {
+  font-size: 400px;
+  z-index: 10;
+  margin-top: -645px;
+  margin-left: 70px;
+}
+

@@ -4,6 +4,12 @@
   src: url('sligoil-micro.woff');
 }
 
+@font-face { 
+  font-family: 'le-murmure'; 
+  font-weight: regular; 
+  src: url('le-murmure.woff');
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
@@ -13,19 +19,21 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --neon-color: rgb(17, 225, 17);
+  --lighter-neon-color: rgb(67, 248, 67);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
   --title-color: hsl(0, 0%, 0%);
-  --text-color: hsl(0, 0%, 35%);
+  --shadow-color: hsl(0, 0%, 15%);
   --text-color-light: hsl(0, 0%, 64%);
   --body-color: hsl(0, 0%, 87%);
   --container-color: hsl(0, 0%, 83%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Bai Jamjuree", sans-serif;
-  --biggest-font-size: 2.5rem;
+  --header-font: 'LeMurmure-Regular', sans-serif;
+  --body-font: 'sligoil', sans-serif;
+  --biggest-font-size: 3.5rem;
   --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
@@ -34,6 +42,7 @@
   --smaller-font-size: .75rem;
 
   /*========== Font weight ==========*/
+  --font-light: 200;
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -47,7 +56,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
-    --biggest-font-size: 4.5rem;
+    --biggest-font-size: 7.5rem;
     --h1-font-size: 3rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -63,31 +72,87 @@
   font-family: Sligoil-Micro, sans-serif;
   margin: 0px 0px;
   padding: 0px 0px;
-  background-color: var(--container-color);
+  background-color: var(--body-color);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: var(--container-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
-.carousel-container {
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.header-middle {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  font-family: var(--header-font);
+  font-size: var(--biggest-font-size);
+  color: var(--neon-color);
+  text-shadow: 0.07rem 0.07rem 0.07rem var(--shadow-color);
+  margin-top: 2rem;
+}
+
+.header-link {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-link-img {
   display: flex;
   align-items: center;
+  position: relative;
+  width: 7rem;
 }
 
+.header-right {
+  width: 7rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+}
+
+
+/*=============== CAROUSEL SECTION ===============*/
+
 .carousel {
-  width: 500px;
-  height: 200px;
+  display: flex;
+  align-items: center;
+  width: 54rem;
+  height: 20rem;
   overflow: hidden;
   position: relative;
-  margin: 0 20px;
   /* border: solid 2px black; */
+  z-index: 1;
 }
 
 .carousel-text {
@@ -98,9 +163,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  opacity: 0;
+  font-size: var(--h3-font-size);
   transition: opacity 1s ease-in-out;
-  margin-left: 20px;
+  margin-left: 4.3rem;
 }
 
 .carousel-text.active {
@@ -113,27 +178,43 @@ body {
   color: black;
   border: none;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 2px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.control:hover,
 .ready-btn {
-  background-color: var(--neon-color);
-  border-radius: 2px;
+  padding: 2rem 4rem;
+  border-radius: 0.3rem;
 }
 
-.next-btn {
-  padding: 10px 25px;
-}
-
-.prev-btn {
-  margin-right: 13px;
-}
-
-.header-middle {
+.ready-btn:hover {
   font-size: var(--h1-font-size);
+  color: var(--shadow-color);
+  background-color: var(--lighter-neon-color);
+  border-radius: 0.3rem;
+}
+
+.control:hover {
+  background-color: var(--neon-color);
+  border-radius: 0.3rem;
+}
+
+.next-btn,
+.prev-btn {
+  font-family: var(--body-font);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-light);
+  padding: 0.5rem 1.6rem;
+} 
+
+.currency-symbol {
+  width: 2vw;
+  height: 3vh;
+  margin-bottom: -0.1rem;
+}
+
+.currency-symbol2 {
+  width: 2vw;
+  height: 3vh;
 }
 

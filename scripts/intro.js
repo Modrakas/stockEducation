@@ -1,20 +1,20 @@
-let currentIndex = 0;
+let currentSlide = 0;
 const carouselTexts = document.querySelectorAll('.carousel-text');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
-function showText(index) {
-    carouselTexts[currentIndex].classList.remove('active');
-    currentIndex = (index + carouselTexts.length) % carouselTexts.length;
-    carouselTexts[currentIndex].classList.add('active');
+function showText(slide) {
+    carouselTexts[currentSlide].classList.remove('active');
+    currentSlide = (slide + carouselTexts.length) % carouselTexts.length;
+    carouselTexts[currentSlide].classList.add('active');
 }
 
 function showNextText() {
-    showText(currentIndex + 1);
+    showText(currentSlide + 1);
 }
 
 function showPrevText() {
-    showText(currentIndex - 1);
+    showText(currentSlide - 1);
 }
 
 nextButton.addEventListener('click', showNextText);
@@ -23,7 +23,7 @@ prevButton.addEventListener('click', showPrevText);
 setInterval(showNextText, 6500);
 
 // Initialize the first text as active
-carouselTexts[currentIndex].classList.add('active');
+carouselTexts[currentSlide].classList.add('active');
 
 // document.getElementById('ready-btn').addEventListener('click', function() {
 //     window.location.href = 'main.html'; 
