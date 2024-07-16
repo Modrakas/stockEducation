@@ -1,9 +1,139 @@
-*{
-  font-family: LeMurmure-Regular, sans-serif;
-  margin: 0px 0px;
-  padding: 0px 0px;
-  background-color: rgba(55,57,56,255);
-  
+@font-face { 
+  font-family: 'sligoil-micro'; 
+  font-weight: regular; 
+  src: url('sligoil-micro.woff');
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --neon-color: rgb(17, 225, 17);
+  --black-color: hsl(0, 0%, 0%);
+  --black-color-light: hsl(0, 0%, 40%);
+  --white-color: hsl(0, 0%, 95%);
+  --title-color: hsl(0, 0%, 0%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 64%);
+  --body-color: hsl(0, 0%, 87%);
+  --container-color: hsl(0, 0%, 83%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+
+*{
+  font-family: Sligoil-Micro, sans-serif;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  background-color: var(--container-color);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--container-color);
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  width: 500px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 20px;
+  /* border: solid 2px black; */
+}
+
+.carousel-text {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  margin-left: 20px;
+}
+
+.carousel-text.active {
+  opacity: 1;
+}
+
+.control,
+.ready-btn {
+  background-color: none;
+  color: black;
+  border: none;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.control:hover,
+.ready-btn {
+  background-color: var(--neon-color);
+  border-radius: 2px;
+}
+
+.next-btn {
+  padding: 10px 25px;
+}
+
+.prev-btn {
+  margin-right: 13px;
+}
+
+.header-middle {
+  font-size: var(--h1-font-size);
+}
 
