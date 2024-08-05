@@ -156,6 +156,11 @@ body {
 }
 
 .carousel-text {
+  display: none;
+  
+}
+
+.carousel-text.active {
   width: 90%;
   height: 100%;
   position: absolute;
@@ -166,9 +171,6 @@ body {
   font-size: var(--h3-font-size);
   transition: opacity 1s ease-in-out;
   margin-left: 4.3rem;
-}
-
-.carousel-text.active {
   opacity: 1;
 }
 

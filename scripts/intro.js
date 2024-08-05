@@ -1,7 +1,7 @@
 let currentSlide = 0;
 const carouselTexts = document.querySelectorAll('.carousel-text');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev-btn');
+const nextButton = document.querySelector('.next-btn');
 
 function showText(slide) {
     carouselTexts[currentSlide].classList.remove('active');
@@ -20,11 +20,9 @@ function showPrevText() {
 nextButton.addEventListener('click', showNextText);
 prevButton.addEventListener('click', showPrevText);
 
-setInterval(showNextText, 6500);
+// setInterval(showNextText, 6500);
 
 // Initialize the first text as active
 carouselTexts[currentSlide].classList.add('active');
 
-// document.getElementById('ready-btn').addEventListener('click', function() {
-//     window.location.href = 'main.html'; 
-// });
+
