@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('../assests/images/logoL.PNG');
+  /* background-image: url('/assests/images/logoL.PNG'); */
   background-repeat: no-repeat;
   background-size: 100vh;
   background-position: center;
@@ -32,21 +32,26 @@ body {
   width: 100%;
 }
 
+img {
+  height: 100vh;
+  margin-top: -20%;
+  margin-left: 4%;
+  z-index: 1;
+}
+
 /*=============== Enter Button ===============*/
 .enter__btn {
-  font-size:50px;
-  color: rgb(17, 225, 17);
+  position: absolute;
+  margin-left: -28.6%;
+  margin-top: .5%;
+  color: var(--neon-color);
   background-color: transparent;
   border: none;
-  text-shadow: 2px 2px 1px rgba(55,57,56,255);
+  text-shadow: 2px 2px 1px var(--shadow-color);
   text-decoration: none;
-  font-size:50px;
-  background-color: transparent;
-  text-shadow: 2px 2px 1px rgba(55,57,56,255);
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  font-size: 4.5rem;
   cursor: pointer;
+  z-index: 10;
 }
 
 
