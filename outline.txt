@@ -1,106 +1,148 @@
-========== ENTRY PAGE ==========
-.nav__logo-circle
-R
+========== MAIN ==========
+.main__page__container
+Enter
 
-.nav__logo-name
-Rian Lot.
+========== INTRO ==========
+.header-left
+img link to main html
 
-.nav__title
-Menu
+.header-middle
+MONEY MARKET NINJA
 
-.nav__name
-Rian
+.header-right
+img link to main html
 
-.nav__link
-Home - About Me - Projects - Contact Me
+.control prev
+<
+
+.carousel-text
+1. Welcome to the beginning of your       
+   financially free future.
+
+2. We use mini lessons and exercises to 
+   enhance your investing knowledge.
+
+3. Test your skills with short quizes and 
+   earn Diya coins!
+
+4. Diya coins can be used to practice 
+   your investment skills without you risking a penny!
+
+5. LET'S GO!
+
+========== LESSONS ==========
+LEVEL ONE
+   .lesson
+      1. What is the stock market?
+         .lesson-card 
+            1. When you hear people talking about "the 
+               market" in regards to finance, they're typically referring to the stock market.
+            2. The stock market is where people buy and  
+               sell shares of companies leading to a variety of risk and reward.
+            3. You might hear people on the news say, "...
+               shares were up(or down)..." describing how the market did (or is doing) in a given time period.
+            4. Basically, the stock market is where you can 
+               buy tiny pieces of a company to invest your money. how well your investment does depends on how well the company does.
+            5. The value of a company will rise and fall 
+               due to compnay or economic news.
+            6. Bonds are kind of like an IOU and usually 
+               have a set payback date - which is considered to be a safer investment.
+            7. There are also exchange traded funds (ETFs), 
+               derivatives, currencies, and other offerings, which we will learn about in later lessons.
+            8. The stock market is where buyers (BULLS) and 
+               sellers (BEARS) come together to invest. You may hear the terms 'bullish' or 'bearish' market, which describes the direction the market is heading in regards to how much people are buying and/or selling stocks.
+            9. The SPREAD is the difference between the 
+               buying and selling price of a stock.
+            10. Think of a used car dealer making a profit  
+               on the price they quote you to buy your car (part-exchange) and the price they charge the new owner when they sell your old car.
+            11. When referring to a stock, this can be 
+               described as the 'BID' and 'ASK' SPREAD.
+            12. The BID is how much youre willing to pay 
+               for a stock for.
+            13. The ASK is how much the stock holder is 
+               willing to sell the stock for.
+            14. the difference between the BID and the ASK  
+               is the SPREAD.
+            15. Who's organizing this sale? The BROKER and 
+               they get paid off the SPREAD. The SPREAD can also contain several other fees or costs.
+            16. Supply and demand also determine the 
+               spread. If you have a lot of sellers the SPREAD can widen (high supply and low demand). 
+            17. If there are a lot of buyers, the SPREAD 
+               can be low (low supply and high demand). This is why the SPREAD is always changing.
+            18. What affects the SPREAD? 
+                  Availability - how easily the SHARES of a company can be traded. 
+                  VOLUME - if the amount of shares available is changing hands quickly.
+                  Popularity - high-priced shares can have a larger SPREAD
+                  Market volatility - Good or bad news whether is about the company or the economy.
+            19. If you're day trading, the BID and ASK 
+               SPREAD is very important because the difference can have a big impact on your daily profits/gains.
+   .lesson
+      2. What are shares?
+
+   .lesson
+      3. What are commodities?
+
+LEVEL TWO
+   .lesson
+      1. What are indices?
+
+      2. what is forex?
+
+LEVEL THREE
+   .lesson
+      1. Contract for difference
+
+      2. Futures
+
+LEVEL FOUR
+   .lesson
+      1. Options
+
+      2. Risk and reward
 
 
-========== HOME ==========
-.home__name
-Rian Lot
 
-.home__social-link
-https://www.instagram.com/
-https://www.linkedin.com/
-https://github.com/
-
-.home__description
-<b>Frontend Developer</b>, with knowledge in web 
-development and design, I offer the best 
-projects resulting in quality work.
-
-.home__scroll-text
-Scroll Down
-
-
-========== ABOUT ==========
-.section__title-1
-About Me.
-
-.about__description
-Passionate about creating <b>Web Pages</b> with 
-<b>UI/UX User Interface</b>, I have years of 
-experience and many clients are happy with 
-the projects carried out.
-
-.about__item
-<b>My Skills Are:</b> HTML, CSS, JavaScript, 
-React, Git & GitHub, Bootstrap, Flutter & 
-Figma.
-
-.button
-Contact Me
-
-.button__ghost
-https://www.linkedin.com/
+========== QUIZES ==========
+LEVEL ONE
+   .quiz
+      What is the stock market?
+         1. In what case would the spread be wider?
+            a. When shares are sold and bought regularly and 
+               are in high demand
+            b. When the number of sellers is higher than the 
+               number of buyers. (coorect)
+            c. Neither would affect the spread
+         2. Which market is generally considered safer?
+            a. Options
+            b. currencies
+            c. Company stocks
+            d. Bonds (correct)
+         3. What doesn't affect the spread?
+            a. Competition - how many other companies operate 
+               in the same market (correct)
+            b. Market volatility - Good or bad news whether is 
+               about the company or the economy. 
+            c. Availability - how easily the SHARES of a 
+               company can be traded. 
+            d. VOLUME - if the amount of shares available is 
+               changing hands quickly.
+         4. Assume the spread on a stock is 5 cents. what is 
+            the ask price, if the bid price is $45.32?
+            a. $45.37 (correct)
+            b. $45.27
+            c. $45.32
+            d. $40.32
 
 
-========== SERVICES ==========
-.section__title-2
-Services.
-
-.services__title .services__description
-Web Design
-Beautiful and elegant designs with 
-interfaces that are intuitive, efficient 
-and pleasant  to use for the user.
-
-Development
-Custom web development tailored to your 
-specifications, designed to provide a 
-flawless user experience.
-
-Mobile App
-Design and transform website projects 
-into mobile apps to provide a seamless
-user experience.
-
-
-========== PROJECTS ==========
-.section__title-1
-Projects.
-
-.projects__subtitle 
-Website
-App
-
-.projects__title 
-Restaurant Website
-Yoga App
-Fast Food App
-Coffee Delivery Website
-Barbershop Website
-
-.projects__description
-Project that you carry out in the design 
-and structure of the layout, showing the 
-design at the client's request.
-
-.projects__link
-View
-
-https://github.com/
-https://dribbble.com/
+========== CASES ==========
+LEVEL ONE
+   .case
+      1. In 2020, the world experienced it's first pandemic in 100 years causing chaos in many industries, one being the aviation industry
+            image
+         How did market shares react?
+         a. down (correct)
+            Europe's six biggest airlines
+         b. up
 
 ========== CONTACT ==========
 .section__title-2
@@ -133,7 +175,6 @@ Does not send emails
 Write me on my social networks
 
 .contact__social-link
-https://www.facebook.com/
 https://www.instagram.com/
 https://www.linkedin.com/
 
@@ -142,14 +183,14 @@ https://www.linkedin.com/
 // serviceID - templateID - #form - publicKey
 
    // Show sent message
-      Message sent successfully ✅
+      Message sent successfully 
 
    // Remove message after five seconds
 
    // Clear input fields
 
    // Show error message
-      Message not sent (service error) ❌
+      Message not sent (service error) 
 
 Subject *
 New message from {{user_name}}
@@ -164,7 +205,7 @@ Subject: {{user_subject}}
 Message: {{user_message}}
 
 Best wishes,
-EmailJS team
+MoDev team
 
 
 ========== FOOTER ==========
@@ -173,4 +214,4 @@ Home - About - Projects
 
 .footer__copy
 &#169; All Rights Reserved By 
-<a href="#">Bedimcode.</a>
+<a href="#">MoDev.</a>
