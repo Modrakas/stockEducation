@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('/assests/images/logoL.PNG');
+  background-image: url('../assests/images/logoL.PNG');
   background-repeat: no-repeat;
   background-size: 100vh;
   background-position: center;
