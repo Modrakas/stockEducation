@@ -1,4 +1,4 @@
-import { lessons } from "../data/lessons.js";
+import { lessons } from "../data/content.js";
 
 
 let lessonHTML = '';

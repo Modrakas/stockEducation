@@ -20,7 +20,7 @@ function showPrevText() {
 nextButton.addEventListener('click', showNextText);
 prevButton.addEventListener('click', showPrevText);
 
-// setInterval(showNextText, 6500);
+setInterval(showNextText, 4000);
 
 // Initialize the first text as active
 carouselTexts[currentSlide].classList.add('active');

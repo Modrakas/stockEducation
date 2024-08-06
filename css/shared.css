@@ -4,53 +4,48 @@
   src: url('le-murmure.woff');
 }
 
-*{
-  font-family: LeMurmure-Regular, sans-serif;
-  margin: 0px 0px;
-  padding: 0px 0px;
-  background-color: rgba(55,57,56,255);
+@font-face { 
+  font-family: 'le-murmure'; 
+  font-weight: regular; 
+  src: url('le-murmure.woff');
 }
 
-body {
-  display: fixed;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url('/assests/images/logoL.PNG');
-  background-repeat: no-repeat;
-  background-size: 100vh;
-  background-position: center;
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: rgb(17, 225, 17);
+  --black-color: hsl(0, 0%, 0%);
+  --black-color-light: hsl(0, 0%, 40%);
+  --white-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 64%);
+  --body-color: hsl(0, 0%, 90%);
+
+   /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --header-font: 'LeMurmure-Regular', sans-serif;
+  --body-font: 'sligoil', sans-serif;
+  --second-body-font: 'Bai Jamjuree', sans-serif ;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
-
-.main__page__container {
-  background-color: transparent;
-  line-height: 200px;
-  margin-top: -100px;
-  position: absolute;
-  text-align: center;
-  padding-top: 21px;
-  padding-left: 9px;
-  top: 50%;
-  width: 100%;
-}
-
-.enter__btn {
-  font-size:50px;
-  color: rgb(17, 225, 17);
-  background-color: transparent;
-  border: none;
-  text-shadow: 2px 2px 1px rgba(55,57,56,255);
-  text-decoration: none;
-  font-size:50px;
-  background-color: transparent;
-  text-shadow: 2px 2px 1px rgba(55,57,56,255);
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-
-
