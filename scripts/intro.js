@@ -1,3 +1,7 @@
+// import { headerHTML } from "./header";
+
+// document.querySelectorAll('.header').innerHTML = headerHTML;
+
 let currentSlide = 0;
 const carouselTexts = document.querySelectorAll('.carousel-text');
 const prevButton = document.querySelector('.prev-btn');
@@ -20,7 +24,7 @@ function showPrevText() {
 nextButton.addEventListener('click', showNextText);
 prevButton.addEventListener('click', showPrevText);
 
-setInterval(showNextText, 4000);
+// setInterval(showNextText, 3500);
 
 // Initialize the first text as active
 carouselTexts[currentSlide].classList.add('active');
